@@ -1984,7 +1984,7 @@ font-style:normal;
 text-align:center;
 line-height:35px;
 color:#fff;
-border:2px solid rgba(0,0,0,0);
+border:5px solid rgba(0,0,0,0);
 
 -webkit-border-radius: 20px;
 -moz-border-radius: 20px;
@@ -2017,7 +2017,7 @@ input[type="text"]{
   letter-spacing:1px;
   color:#959595;
   background: rgba(0, 0, 0, 0);
-  border:1px solid rgba(255,255,255,0.3);
+  border:2px solid rgba(255,255,255,0.6);
   padding:10px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2045,7 +2045,7 @@ textarea {
   letter-spacing:1px;
   color:#959595;
   background: rgba(0, 0, 0, 0);
-  border:1px solid rgba(255,255,255,0.3);
+  border:2px solid rgba(255,255,255,0.6);
   padding:10px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2238,7 +2238,7 @@ transition: all 0.3s ease;
 /* footer */
 .subfooter{
   width: 100%;
-  background-image: url(../img/bg-contact.jpg);
+  background-image: url(../img/footb.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
