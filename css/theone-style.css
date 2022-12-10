@@ -328,7 +328,7 @@ input{
 .devider-img img{display : block;margin : auto; }
 
 /* section */
-section{padding:160px 0 160px 0;}
+section{padding:40px 0 80px 0;}
 .no-bottom {padding-bottom: 0 !important;}
 .no-top {padding-top: 0 !important;}
 .no-padding,section.no-padding{
@@ -394,7 +394,7 @@ padding:0;
   background: -webkit-linear-gradient(#fff,#fcfcfc ); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#fff,#fcfcfc); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#fff,#fcfcfc); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fff,#efcfcfc); /* Standard syntax */
+  background: linear-gradient(#fff,#fcfcfc); /* Standard syntax */
 }
 .whitepage-1{
   width: 100%;
@@ -1865,15 +1865,24 @@ margin: 20px 20px 0 20px;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-.team .hovereffect:hover .overlay-2 {
-  opacity: 1;
-  bottom: 0;	
-  background-color: rgba(0,0,0,.3);
-  -moz-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+.team .hovereffect .overlay-2 {
+    opacity: 1;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
 }
+/*.team .hovereffect:hover .overlay-2 {*/
+/*  opacity: 1;*/
+/*  bottom: 0;	*/
+/*  background-color: rgba(0,0,0,.3);*/
+/*  -moz-transition: all 0.6s ease;*/
+/*  -ms-transition: all 0.6s ease;*/
+/*  -o-transition: all 0.6s ease;*/
+/*  transition: all 0.6s ease;*/
+/*}*/
 
 .team .overlay-2 .content{
 white-space: nowrap;
@@ -1886,13 +1895,21 @@ padding:30px;
 -o-transition: all 0.6s ease;
 transition: all 0.6s ease;
 }
-.team .hovereffect:hover .overlay-2 .content{ 
-  margin: 70% 20px 0 20px; 
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; 
-  }
+
+.team .hovereffect .overlay-2 .content{
+    margin: 70% 20px 0 20px;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+/*.team .hovereffect:hover .overlay-2 .content{*/
+/*  margin: 70% 20px 0 20px; */
+/*  -moz-transition: all 0.3s ease;*/
+/*  -ms-transition: all 0.3s ease;*/
+/*  -o-transition: all 0.3s ease;*/
+/*  transition: all 0.3s ease; */
+/*  }*/
 .team .overlay-2 .content .heading{
 	font-size:21px;
 	font-weight:500;
@@ -2357,7 +2374,7 @@ footer.black {
   font-size: 9pt;
   letter-spacing:.5px;
   font-weight: 300;
-  padding: 30px 0 30px 0;
+  padding: 15px 0 15px 0;
 }
 footer.black .social-icons{ margin:15px 0 15px 0;}
 
@@ -2988,11 +3005,16 @@ select.form-control, select.form-control:hover, select.form-control:focus, input
   align-self: center;
 }
 #about{
-  padding: 90px 0px;
+  padding: 30px 0px;
 }
 .bgcolorlayerslider1{
    background-color: rgba(0,0,0,0.09);
-   padding: 100px 0px; 
+   padding: 50px 0px;
+}
+
+.bgcolorlayersliderstep{
+    background-color: rgba(0,0,0,0.09);
+    padding: 100px 0px;
 }
 .subscribe-section,.milestone-section,.testimony-section,.video-section{
   padding: 0px !important;
@@ -3014,4 +3036,23 @@ select.form-control, select.form-control:hover, select.form-control:focus, input
 }
 .parallax-slider-section{
   background-color: rgba(0,0,0,0.5);
+}
+
+@media (max-width: 1000px) {
+
+    .desktop-visible {
+        display: none;
+    }
+    #centerhideimg{
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+
+    .desktop-visible {
+        opacity: 1;
+    }
+    #centerhideimg{
+        opacity: 1;
+    }
 }

@@ -326,7 +326,7 @@ jQuery(function() {
             itemsTablet: [ 600, 1 ],
             itemsMobile: false,
             autoPlay: false,
-            navigation: true,
+            navigation: false,
             navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ]
         } );
 
