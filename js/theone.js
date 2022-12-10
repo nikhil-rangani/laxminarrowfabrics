@@ -109,10 +109,11 @@ jQuery(function() {
             value: "Sending..."
         }), jQuery.ajax({
             type: "POST",
-            url: "send.php",
-            data: "name=" + e + "&email=" + a + "&subject=You Got Email&message=" + s,
+            url: "thank-you.php",
+            data: "name=" + e + "&email=" + a + "&subject=" + s,
             success: function(e) {
-                "success" == e ? ( successent.fadeIn(500)) : (failedsent.html(e).fadeIn(500), contactsent.removeAttr("disabled").attr("value", "send").remove())
+               // alert(e);
+                "success" == "wrong" ? ( successent.fadeIn(500)) : (successent.html(e).fadeIn(500), contactsent.removeAttr("disabled"))
             }
         })), !1
     })
@@ -320,12 +321,12 @@ jQuery(function() {
         var owl = jQuery( "#owl-team" );
         owl.owlCarousel( {
             items: 3,
-            pagination: false,
+            pagination: true,
             itemsDesktop: [ 1000, 2 ],
             itemsDesktopSmall: [ 900, 2 ],
-            itemsTablet: [ 600, 1 ],
+            itemsTablet: [ 600, 1],
             itemsMobile: false,
-            autoPlay: false,
+            autoPlay: true,
             navigation: false,
             navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ]
         } );

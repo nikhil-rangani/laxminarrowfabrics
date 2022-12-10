@@ -22,7 +22,7 @@
     // of different video formats to add
     src: [
       {
-        src: 'https://s3.envato.com/h264-video-previews/55c67dde-97ce-4850-8914-726c5d3878d0/17117506.mp4',
+        src: 'http://localhost/laxminarrowfabrics/img/1.webm',
         type: 'video/mp4'
       },
       {

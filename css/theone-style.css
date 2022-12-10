@@ -884,8 +884,8 @@ li>a:only-child:after {
 .featuresdown{
     width:100%;
     height:100%;
-    border:1px solid #efefef;
-    padding:30px;
+    border:2px solid #efefef;
+    padding:29px;
     /*background:#fdfdfd;*/
     text-align:center;
     -webkit-transition: all 0.3s ease-in-out;
@@ -897,8 +897,7 @@ li>a:only-child:after {
 .featuresdown:hover{
     cursor:pointer;
     color:#fff;
-    border:1px solid rgba(0,0,0,0.1);
-
+    border:2px solid rgba(0,0,0,0.2);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -2243,7 +2242,7 @@ transition: all 0.3s ease;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color:#ebebeb;
+  color:#ffffff;
   height: auto;
   box-shadow: 5px 5px 20px rgba(23, 36, 52, .8);
   font-weight: 400;
@@ -2282,8 +2281,8 @@ transition: all 0.3s ease;
   display:inline-block;
   font-size:13px;
   margin-right:15px;
-  margin-top:50px;
-  margin-bottom:30px;
+  /*margin-top:50px;*/
+  /*margin-bottom:30px;*/
 }
 .subfooter address span strong {
   font-weight: 500;
@@ -2307,10 +2306,10 @@ transition: all 0.3s ease;
 	width:60px;
 	height:60px;
 	line-height:30px;
-	font-size:14pt;
+	font-size:18pt;
 	display:block;
 	margin:20px auto;
-	border:1px solid rgba(255,255,255,.3);
+	border:3px solid rgba(255,255,255,.7);
 	-webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
@@ -2318,7 +2317,7 @@ transition: all 0.3s ease;
     transition: all ease 0.3s;
 	}
 	address span i:hover{
-		border:1px solid; 
+		border:2px solid;
 		-webkit-transition: all ease 0.3s;
         -moz-transition: all ease 0.3s;
         -o-transition: all ease 0.3s;
