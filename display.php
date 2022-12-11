@@ -1,20 +1,12 @@
 <?php
 require "Db_config.php";
-$brachDisplayquery = db_select("SELECT * FROM inquiry ORDER BY id DESC  ",'inquiry','SELECT');
+$brachDisplayquery = db_select("SELECT * FROM inquiry ORDER BY id DESC limit 7 ",'inquiry','SELECT');
 //echo gettype($brachDisplayquery);
 
 IF( gettype($brachDisplayquery) == 'string'){
     header('Location: index.html');
 }
-$emparray = array();
-while($row =mysqli_fetch_assoc($brachDisplayquery))
-{
-    $emparray[] = $row;
-}
-//print_r($emparray);
-$jsondata= json_encode($emparray);
-//PRINT_R($jsondata);
-//die();
+
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -57,7 +49,7 @@ $jsondata= json_encode($emparray);
       </div>
     </div>
 
-<div class="grid-wrapper" style="height: 400px">
+<div class="grid-wrapper" style="height: 500px">
     <div id="nestedGrid" class="k-grid-with-pager"></div>
 </div>
 

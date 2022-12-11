@@ -1,6 +1,6 @@
 <?php
 require "Db_config.php";
-$brachDisplayquery = db_select("SELECT * FROM inquiry ORDER BY id DESC  ",'inquiry','SELECT');
+$brachDisplayquery = db_select("SELECT * FROM inquiry ORDER BY id DESC limit 10 ",'inquiry','SELECT');
 //echo gettype($brachDisplayquery);
 
 IF( gettype($brachDisplayquery) == 'string'){

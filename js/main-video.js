@@ -13,7 +13,7 @@
 
     // autoplay: false,
 
-    isMobile: window.matchMedia('(max-width: 768px)').matches,
+   // isMobile: window.matchMedia('(max-width: 768px)').matches,
 
     playButton: document.querySelector('#play'),
     pauseButton: document.querySelector('#pause'),
